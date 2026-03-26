@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saad Megahed | Nanoscience Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">SM</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-label">Postdoctoral Researcher · Nanoscience</p>
+      <h1 class="hero-name">Saad<br/><em>Megahed</em></h1>
+      <p class="hero-desc">
+        Exploring the nano-bio interface — from protein corona dynamics to nanozyme catalysis.
+        Currently at the <strong>Italian Institute of Technology</strong>, Genoa.
+      </p>
+      <div class="hero-links">
+        <a href="publications.html" class="btn-primary">View Publications</a>
+        <a href="contact.html" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">11+</span>
+        <span class="stat-label">Publications</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">PhD</span>
+        <span class="stat-label">Magna Cum Laude</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Languages</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Research Focus</h2>
+          <p>My work sits at the intersection of <em>nanomaterials</em>, <em>biochemistry</em>, and <em>cell biology</em>. I design and functionalize nanoparticles — tuning their surface chemistry to control how they interact with proteins, bacteria, and living cells.</p>
+          <p>Currently I'm investigating the enzymatic behavior of <strong>nanozymes</strong>: nano-scale materials that mimic biological enzymes, with potential applications in diagnostics, catalysis, and biomedicine.</p>
+        </div>
+        <div class="about-cards">
+          <div class="card">
+            <span class="card-icon">⬡</span>
+            <h3>Nanozymes</h3>
+            <p>Peroxidase & GOx-like activity of metallic nanostructures</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">◈</span>
+            <h3>Protein Corona</h3>
+            <p>FCS-based analysis of biomolecular adsorption on NPs</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">◉</span>
+            <h3>Biosensors</h3>
+            <p>Nanoclusters for label-free microbial discrimination</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-highlights">
+    <div class="container">
+      <h2 class="section-title">Recent Highlights</h2>
+      <div class="highlights-list">
+        <div class="highlight-item">
+          <span class="hl-year">2026</span>
+          <div class="hl-content">
+            <h4>Oral presentation at ICONAN26, Rome</h4>
+            <p>Protein oxidation vs protection — the dual behavior of metallic nanozymes</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="hl-year">2025</span>
+          <div class="hl-content">
+            <h4>Paper in ACS Nano</h4>
+            <p>Interfacing with the Brain: How Nanotechnology Can Contribute</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="hl-year">2025</span>
+          <div class="hl-content">
+            <h4>Paper in Scientific Reports</h4>
+            <p>BSA-protected copper nanoclusters as a label-free biosensor for bacterial discrimination</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="hl-year">2024</span>
+          <div class="hl-content">
+            <h4>Joined IIT, Genoa</h4>
+            <p>Postdoctoral researcher at the Italian Institute of Technology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Saad Megahed · <a href="mailto:saad.megahed@iit.it">saad.megahed@iit.it</a> · <a href="https://orcid.org/0000-0001-8556-5710" target="_blank">ORCID</a></p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

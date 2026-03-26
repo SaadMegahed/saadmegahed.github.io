@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Saad Megahed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">SM</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="hero-label">Get In Touch</p>
+      <h1><em>Contact</em></h1>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h2>Let's connect</h2>
+          <p>Whether you're interested in collaboration, have questions about my research, or just want to discuss nanoscience — feel free to reach out.</p>
+
+          <div class="contact-list">
+            <div class="contact-row">
+              <span class="clabel">Primary Email</span>
+              <a href="mailto:saad.megahed@iit.it">saad.megahed@iit.it</a>
+            </div>
+            <div class="contact-row">
+              <span class="clabel">Secondary Email</span>
+              <a href="mailto:smegahed@azhar.edu.eg">smegahed@azhar.edu.eg</a>
+            </div>
+            <div class="contact-row">
+              <span class="clabel">Phone</span>
+              <span>+39 327 962 1253</span>
+            </div>
+            <div class="contact-row">
+              <span class="clabel">ORCID</span>
+              <a href="https://orcid.org/0000-0001-8556-5710" target="_blank">0000-0001-8556-5710</a>
+            </div>
+            <div class="contact-row">
+              <span class="clabel">Affiliation</span>
+              <span>Italian Institute of Technology (IIT), Genoa, Italy</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:1.2rem;">Send a message</p>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Research collaboration, inquiry, etc." />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:fit-content;">Send Message</button>
+            <p id="form-note" style="display:none; font-family:var(--font-mono); font-size:0.75rem; color:var(--accent); margin-top:0.5rem;"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- REFERENCES -->
+      <div style="margin-top:5rem;">
+        <h2 class="section-title" style="font-size:1.5rem;">References</h2>
+        <div class="refs-grid">
+          <div class="ref-card">
+            <h4>Prof. Dr. Wolfgang Parak</h4>
+            <p class="ref-role">PhD Thesis Supervisor<br/>Institut für Nanostruktur- und Festkörperphysik, Universität Hamburg</p>
+            <a href="mailto:wolfgang.parak@uni-hamburg.de">wolfgang.parak@uni-hamburg.de</a>
+          </div>
+          <div class="ref-card">
+            <h4>Prof. Alaaldin M. Alkilany</h4>
+            <p class="ref-role">Professor of Pharmaceutics and Nanotechnology<br/>College of Pharmacy, Qatar University</p>
+            <a href="mailto:alkilany@qu.edu.qa">alkilany@qu.edu.qa</a>
+          </div>
+          <div class="ref-card">
+            <h4>Dr. Neus Feliu</h4>
+            <p class="ref-role">PhD Thesis Co-supervisor<br/>Fraunhofer Center of Applied Nanotechnology CAN, Hamburg</p>
+            <a href="mailto:neus.feliu@physnet.uni-hamburg.de">neus.feliu@physnet.uni-hamburg.de</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Saad Megahed · <a href="mailto:saad.megahed@iit.it">saad.megahed@iit.it</a> · <a href="https://orcid.org/0000-0001-8556-5710" target="_blank">ORCID</a></p>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.querySelector('.nav-links').classList.toggle('open'); }
+    function handleSubmit(e) {
+      e.preventDefault();
+      const note = document.getElementById('form-note');
+      note.style.display = 'block';
+      note.textContent = '✓ Message ready — to enable sending, connect this form to a service like Formspree or Netlify Forms.';
+    }
+  </script>
+</body>
+</html>

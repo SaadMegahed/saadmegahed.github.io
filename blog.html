@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Saad Megahed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">SM</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="hero-label">Science Communication</p>
+      <h1><em>Blog</em> Posts</h1>
+    </div>
+  </div>
+
+  <div class="blog-section">
+    <div class="container">
+
+      <div class="blog-grid">
+
+        <div class="blog-card">
+          <div class="blog-tag">Science Communication · Nanoscience</div>
+          <h3>Getting Rid of 'Corona'</h3>
+          <p>An accessible exploration of the protein corona — the invisible biomolecular layer that forms around nanoparticles in biological fluids, and why it matters for nanomedicine.</p>
+          <a href="https://science-chatter.blogs.uni-hamburg.de/?p=272" class="blog-link" target="_blank">Read on Science Chatter →</a>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-tag">PhD Life · Productivity</div>
+          <h3>Tips and Tools to Have a Less Stressful PhD</h3>
+          <p>Practical advice from personal experience — tools, habits, and mindset shifts that helped navigate the challenges of doctoral research.</p>
+          <a href="https://science-chatter.blogs.uni-hamburg.de/?p=957" class="blog-link" target="_blank">Read on Science Chatter →</a>
+        </div>
+
+        <!-- Placeholder for future posts -->
+        <div class="blog-card" style="opacity:0.45; border-style: dashed;">
+          <div class="blog-tag">Coming Soon</div>
+          <h3>What Are Nanozymes?</h3>
+          <p>A plain-language introduction to nanozymes — nano-scale materials that can mimic natural enzymes — and their exciting potential in diagnostics and therapy.</p>
+          <span class="blog-link" style="color:var(--text-muted); cursor:default;">In preparation</span>
+        </div>
+
+        <div class="blog-card" style="opacity:0.45; border-style: dashed;">
+          <div class="blog-tag">Coming Soon</div>
+          <h3>From Cairo to Hamburg to Genoa</h3>
+          <p>A personal reflection on navigating an international academic career across three countries and three cultures.</p>
+          <span class="blog-link" style="color:var(--text-muted); cursor:default;">In preparation</span>
+        </div>
+
+      </div>
+
+      <div class="blog-note">
+        <strong>Note:</strong> Published posts are hosted on the University of Hamburg's <em>Science Chatter</em> blog. New posts will be added here as they are published. Want to collaborate on a science communication piece?
+        <a href="contact.html">Get in touch</a>.
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Saad Megahed · <a href="mailto:saad.megahed@iit.it">saad.megahed@iit.it</a> · <a href="https://orcid.org/0000-0001-8556-5710" target="_blank">ORCID</a></p>
+  </footer>
+  <script>function toggleMenu() { document.querySelector('.nav-links').classList.toggle('open'); }</script>
+</body>
+</html>
