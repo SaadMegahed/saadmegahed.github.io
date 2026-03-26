@@ -9,10 +9,10 @@ A static multi-page portfolio website built for GitHub Pages.
 - `blog.html` — Science communication posts
 - `contact.html` — Contact info & references
 
-## How to Deploy on GitHub Pages
+<!--## How to Deploy on GitHub Pages
 
 ### Step 1 — Create a GitHub account
-Go to [github.com](https://github.com) and sign up (free).
+<!-- Go to [github.com](https://github.com) and sign up (free).
 
 ### Step 2 — Create a new repository
 1. Click the **+** icon → **New repository**
@@ -43,8 +43,6 @@ Go to [github.com](https://github.com) and sign up (free).
 After ~1–2 minutes, your site is live at:
 **`https://yourusername.github.io`**
 
----
-
 ## To Enable the Contact Form
 The contact form needs a backend. The easiest free option:
 1. Go to [formspree.io](https://formspree.io) and sign up
@@ -54,7 +52,7 @@ The contact form needs a backend. The easiest free option:
    <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
    ```
 4. Remove the `onsubmit="handleSubmit(event)"` attribute
-5. Change the button `type="submit"` stays as is
+5. Change the button `type="submit"` stays as is -->
 
 ---
 
@@ -62,4 +60,4 @@ The contact form needs a backend. The easiest free option:
 - **Profile photo**: Add `<img src="photo.jpg" ...>` to `index.html`
 - **New blog post**: Copy a `.blog-card` block in `blog.html` and update the content
 - **New publication**: Copy a `.pub-item` block in `publications.html`
-- **Custom domain**: Buy a domain (~$10/yr) and add a `CNAME` file with your domain name
+<!--- **Custom domain**: Buy a domain (~$10/yr) and add a `CNAME` file with your domain name-->
