@@ -105,6 +105,62 @@ a:hover { opacity: 0.75; }
 }
 .hero-desc strong { color: var(--text); }
 .hero-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+/* ——— HERO PHOTO ——— */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+}
+
+.hero-photo-wrap {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hero-photo-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border: 1px solid var(--accent);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero-photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--accent2);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.hero-photo {
+  width: 300px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(20%) contrast(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .hero-photo {
+    width: 280px;
+    height: 340px;
+  }
+}
 .btn-primary {
   font-family: var(--font-mono);
   font-size: 0.78rem;
